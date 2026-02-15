@@ -1,69 +1,73 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheickpoint_html</title>
-</head>
 <body>
-    <nav>
-         <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-         </ul>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <section id="home">
-    <h1>Bienvenue sur mon site</h1>
-    <p>Ceci est mon projet HTML pour le checkpoint.</p>
-</section>
-<section id="about">
-    <h2>About</h2>
-    <p>Je suis en formation en développement web chez Gomycode.</p>
-</section>
-<section id="work">
-    <h2>Work</h2>
-    <ul>
-        <li>Projet 1 : Site vitrine</li>
-        <li>Projet 2 : Portfolio</li>
-        <li>Projet 3 : Application web</li>
-    </ul>
-</section>
-<section id="resume">
-    <h2>Resume</h2>
 
-    <h3>Expérience</h3>
-    <p>Finance et investissement</p>
+    <main class="container">
+        <section id="home" class="section hero">
+            <h1 class="title">Bienvenue sur mon site</h1>
+            <p class="subtitle">Ceci est mon projet HTML pour le checkpoint.</p>
+        </section>
 
-    <h3>Compétences</h3>
-    <ul>
-        <li>HTML</li>
-        <li>Git / GitHub</li>
-        <li>VS Code</li>
-    </ul>
-</section>
-<section id="contact">
-    <h2>Contact</h2>
+        <section id="about" class="section">
+            <h2 class="section-title">About</h2>
+            <p>Je suis en formation en développement web chez Gomycode.</p>
+        </section>
 
-    <form>
+        <section id="work" class="section">
+            <h2 class="section-title">Work</h2>
+            <ul class="list">
+                <li>Projet 1 : Site vitrine</li>
+                <li>Projet 2 : Portfolio</li>
+                <li>Projet 3 : Application web</li>
+            </ul>
+        </section>
 
-        <label for="name">Nom :</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <section id="resume" class="section">
+            <h2 class="section-title">Resume</h2>
 
-        <label for="email">Email :</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <h3 class="sub-title">Expérience</h3>
+            <p>Finance et investissement</p>
 
-        <label for="message">Message :</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <h3 class="sub-title">Compétences</h3>
+            <ul class="list">
+                <li>HTML</li>
+                <li>Git / GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </section>
 
-        <button type="submit">Envoyer</button>
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
 
-    </form>
-</section>
-<footer>
-    <p>© 2026 - Checkpoint HTML Sylla - Tous droits réservés</p>
-</footer>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label><br>
+                    <input class="input" type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label><br>
+                    <input class="input" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message :</label><br>
+                    <textarea class="input" id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 - Checkpoint HTML Sylla - Tous droits réservés</p>
+    </footer>
 </body>
-</html>
